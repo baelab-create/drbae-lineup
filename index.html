@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>닥터배 제품 라인업 상세</title>
+<meta name="description" content="닥터배 스킨부스터 9종의 전성분 · 핵심 원료 · 원료 조합 설계와 혼합 호환성 — 에스테틱 전문가용 제품 상세 자료">
+
+<!-- 링크 공유 미리보기 (인스타 DM · 카톡 · 페이스북) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="닥터배 메디컬 에스테틱">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://baelab-create.github.io/drbae-lineup/">
+<meta property="og:title" content="닥터배 제품 라인업 상세">
+<meta property="og:description" content="전성분 · 핵심 원료 · 원료 조합 설계 — 페이스 6종 · 두피 3종">
+<meta property="og:image" content="https://baelab-create.github.io/drbae-lineup/assets/og-lineup.jpg">
+<meta property="og:image:secure_url" content="https://baelab-create.github.io/drbae-lineup/assets/og-lineup.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="닥터배 제품 라인업 상세 — 전성분 · 핵심 원료 · 원료 조합 설계">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="닥터배 제품 라인업 상세">
+<meta name="twitter:description" content="전성분 · 핵심 원료 · 원료 조합 설계 — 페이스 6종 · 두피 3종">
+<meta name="twitter:image" content="https://baelab-create.github.io/drbae-lineup/assets/og-lineup.jpg">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --navy:#0e2a47;
+    --blue:#2f6fb2;
+    --sky:#eaf2fa;
+    --gold:#b98a2e;
+    --ink:#20242b;
+    --sub:#5b6472;
+    --line:#dfe5ec;
+    --bg:#f7f9fb;
+    --card:#ffffff;
+    --pink:#d97b96;
+    --brown:#8a6547;
+    --green:#4f7d5c;
+    --black:#2b3038;
+    --gray:#6b7684;
+    --teal:#2f8f8a;
+    --warn:#9a5b12;
+    --warn-bg:#fbf1e2;
+    --danger:#b4232b;
+    --danger-bg:#fdeeee;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic",sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.65;
+    word-break:keep-all;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- hero ---------- */
+  header{
+    background:linear-gradient(160deg,var(--navy) 0%,#1b4470 70%,var(--blue) 100%);
+    color:#fff; padding:60px 0 52px; text-align:center;
+  }
+  .hero-badge{
+    display:inline-block; font-size:.78rem; letter-spacing:.14em;
+    border:1px solid rgba(255,255,255,.45); border-radius:999px;
+    padding:6px 16px; margin-bottom:20px; color:#dce9f7; font-weight:600;
+  }
+  header h1{font-size:2rem; font-weight:800; letter-spacing:-.02em; line-height:1.3;}
+  header p.lead{margin-top:14px; font-size:1rem; color:#c7dbf0; line-height:1.7;}
+  .hero-stats{
+    display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:26px;
+  }
+  .hstat{
+    background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.16);
+    border-radius:10px; padding:9px 14px; min-width:96px;
+  }
+  .hstat b{display:block; font-size:1.15rem; font-weight:800; color:#fff;}
+  .hstat span{font-size:.72rem; letter-spacing:.06em; color:#a9c6e3;}
+
+  /* ---------- nav ---------- */
+  nav.chips{
+    position:sticky; top:0; z-index:20; background:rgba(247,249,251,.94);
+    backdrop-filter:saturate(180%) blur(8px); border-bottom:1px solid var(--line);
+  }
+  .chiprow{display:flex; gap:8px; overflow-x:auto; padding:11px 20px; max-width:860px; margin:0 auto; scrollbar-width:none;}
+  .chiprow::-webkit-scrollbar{display:none;}
+  .chiprow a{
+    flex:0 0 auto; font-size:.8rem; font-weight:600; color:var(--sub);
+    border:1px solid var(--line); background:#fff; border-radius:999px;
+    padding:6px 13px; text-decoration:none; white-space:nowrap;
+  }
+  .chiprow a:hover{color:var(--blue); border-color:var(--blue);}
+
+  /* ---------- section ---------- */
+  section{padding:52px 0 8px;}
+  .kicker{
+    font-family:var(--mono); font-size:.72rem; letter-spacing:.18em;
+    color:var(--blue); text-transform:uppercase; font-weight:700; margin-bottom:8px;
+  }
+  h2{font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.35;}
+  .sec-lead{margin-top:12px; color:var(--sub); font-size:.94rem; line-height:1.75;}
+
+  /* ---------- core platform ---------- */
+  .core{
+    margin-top:22px; background:linear-gradient(150deg,#12314f,#0e1c2b);
+    color:#fff; border-radius:16px; padding:26px 22px; position:relative; overflow:hidden;
+  }
+  .core::after{content:""; position:absolute; right:-50px; top:-50px; width:190px; height:190px;
+    background:radial-gradient(circle,rgba(47,111,178,.4),transparent 70%);}
+  .core-eye{font-family:var(--mono); font-size:.7rem; letter-spacing:.16em; color:#8fd0ee; text-transform:uppercase; margin-bottom:10px;}
+  .core h3{font-size:1.18rem; font-weight:800; line-height:1.45; letter-spacing:-.01em;}
+  .core p{margin-top:12px; font-size:.9rem; color:#b8cee2; line-height:1.75;}
+  .core p b{color:#fff;}
+  .core-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:18px;}
+  .core-item{background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.13); border-radius:10px; padding:13px 14px;}
+  .core-item b{display:block; font-size:.85rem; color:#fff; margin-bottom:4px;}
+  .core-item span{font-size:.78rem; color:#a9c6e3; line-height:1.6;}
+
+  /* ---------- accordion ---------- */
+  .acc{margin-top:20px; display:flex; flex-direction:column; gap:10px;}
+  details.item{
+    background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden;
+  }
+  details.item[open]{border-color:#c6d6e8; box-shadow:0 4px 18px rgba(14,42,71,.06);}
+  summary{
+    list-style:none; cursor:pointer; padding:16px 18px;
+    display:flex; align-items:center; gap:11px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  .dot{flex:0 0 auto; width:11px; height:11px; border-radius:50%;}
+  .p-name{font-weight:700; font-size:1rem; letter-spacing:-.01em; flex:1 1 auto;}
+  .p-tag{
+    flex:0 0 auto; font-size:.72rem; font-weight:600; color:var(--sub);
+    background:#f1f5f9; border:1px solid var(--line); border-radius:999px; padding:4px 10px;
+  }
+  .caret{flex:0 0 auto; color:#9aa7b5; transition:transform .2s; font-size:.85rem;}
+  details.item[open] .caret{transform:rotate(180deg);}
+  .panel{padding:0 18px 18px; border-top:1px solid #eef2f6; margin-top:-1px;}
+  .panel .desc{padding-top:15px; font-size:.92rem; color:var(--sub); line-height:1.78;}
+  .panel .desc b{color:var(--ink); font-weight:600;}
+
+  .meta{margin-top:14px; border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+  .meta div{display:flex; gap:10px; padding:9px 12px; font-size:.85rem; border-bottom:1px solid #eef2f6;}
+  .meta div:last-child{border-bottom:none;}
+  .meta b{flex:0 0 62px; color:var(--blue); font-weight:700; font-size:.8rem;}
+  .meta span{color:var(--sub); line-height:1.6;}
+
+  .blk-title{
+    margin-top:18px; font-size:.76rem; font-weight:700; letter-spacing:.12em;
+    color:var(--blue); font-family:var(--mono); text-transform:uppercase;
+  }
+  .blk-title.kr{
+    font-family:inherit; font-size:.83rem; letter-spacing:.01em; text-transform:none;
+  }
+  .axes{display:grid; grid-template-columns:repeat(2,1fr); gap:9px; margin-top:9px;}
+  .axis{background:#f7fafd; border:1px solid #e3ebf3; border-radius:10px; padding:12px 13px;}
+  .axis .ax-n{font-family:var(--mono); font-size:.66rem; letter-spacing:.1em; color:#8aa0b8; text-transform:uppercase;}
+  .axis .ax-t{font-size:.87rem; font-weight:700; margin-top:3px; letter-spacing:-.01em;}
+  .axis .ax-d{font-size:.79rem; color:var(--sub); margin-top:5px; line-height:1.62;}
+
+  ul.pts{margin-top:9px; padding-left:0; list-style:none;}
+  ul.pts li{position:relative; padding-left:16px; font-size:.88rem; color:var(--sub); line-height:1.72; margin-bottom:7px;}
+  ul.pts li::before{content:""; position:absolute; left:3px; top:.72em; width:5px; height:5px; border-radius:50%; background:var(--blue);}
+  ul.pts li b{color:var(--ink); font-weight:600;}
+
+  .edge{
+    margin-top:10px; background:var(--sky); border:1px solid #cfe0f0; border-left:3px solid var(--blue);
+    border-radius:8px; padding:12px 14px; font-size:.87rem; color:#1b4470; line-height:1.72;
+  }
+  .edge b{font-weight:700;}
+  .caution{
+    margin-top:10px; background:var(--warn-bg); border:1px solid #ecd9b4; border-left:3px solid var(--warn);
+    border-radius:8px; padding:12px 14px; font-size:.85rem; color:#6f4310; line-height:1.7;
+  }
+  .caution b{color:#5a3608; font-weight:700;}
+  .forbid{
+    margin-top:10px; background:var(--danger-bg); border:1px solid #f0c9c9; border-left:3px solid var(--danger);
+    border-radius:8px; padding:12px 14px; font-size:.85rem; color:#8a1c22; line-height:1.7;
+  }
+  .forbid b{font-weight:700;}
+
+  details.inci{margin-top:14px; border:1px solid var(--line); border-radius:10px; background:#fbfcfe;}
+  details.inci summary{padding:11px 14px; font-size:.82rem; font-weight:600; color:var(--sub);}
+  details.inci summary::after{content:"펼치기"; margin-left:auto; font-size:.72rem; color:#9aa7b5; font-weight:500;}
+  details.inci[open] summary::after{content:"접기";}
+  .inci-body{padding:0 14px 13px; font-size:.79rem; color:var(--sub); line-height:1.85; word-break:break-all;}
+  .inci-note{margin-top:8px; font-size:.73rem; color:#8aa0b8;}
+  .inci-pending{padding:0 14px 13px; font-size:.82rem; color:var(--warn); line-height:1.7;}
+
+  /* ---------- compat table ---------- */
+  .tbl-wrap{margin-top:18px; overflow-x:auto; border:1px solid var(--line); border-radius:12px; background:#fff;}
+  table{border-collapse:collapse; width:100%; min-width:520px; font-size:.85rem;}
+  th,td{padding:11px 13px; text-align:left; border-bottom:1px solid #eef2f6;}
+  th{background:#f2f6fa; font-weight:700; font-size:.78rem; color:var(--navy); letter-spacing:.02em;}
+  td{color:var(--sub);}
+  td b{color:var(--ink); font-weight:600;}
+  tr:last-child td{border-bottom:none;}
+  .ok{color:var(--green); font-weight:700;}
+  .no{color:var(--danger); font-weight:700;}
+
+  /* ---------- compliance ---------- */
+  .note-card{
+    margin-top:18px; background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px;
+  }
+  .note-card h4{font-size:.95rem; font-weight:700; margin-bottom:9px;}
+  .note-card p{font-size:.87rem; color:var(--sub); line-height:1.78;}
+
+  /* ---------- footer ---------- */
+  footer{
+    margin-top:56px; background:var(--navy); color:#a9c6e3; padding:34px 0 40px; text-align:center; font-size:.83rem; line-height:1.8;
+  }
+  footer b{color:#fff; font-weight:700;}
+  footer a{color:#8fd0ee; text-decoration:none;}
+  .flink{
+    display:inline-block; margin-top:14px; background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.2); border-radius:999px; padding:9px 18px;
+    color:#fff; font-weight:600; font-size:.85rem; text-decoration:none;
+  }
+
+  @media (max-width:600px){
+    header{padding:46px 0 40px;}
+    header h1{font-size:1.55rem;}
+    header p.lead{font-size:.92rem;}
+    h2{font-size:1.28rem;}
+    section{padding:42px 0 6px;}
+    .axes{grid-template-columns:1fr;}
+    .core-grid{grid-template-columns:1fr;}
+    .p-name{font-size:.94rem;}
+    .p-tag{font-size:.68rem; padding:3px 8px;}
+    summary{padding:14px 14px; gap:9px;}
+    .panel{padding:0 14px 16px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="hero-badge">DR.BAE PRODUCT DOSSIER</span>
+    <h1>닥터배 제품 라인업 상세</h1>
+    <p class="lead">전성분 · 핵심 원료 · 원료 조합에서 오는 설계 의도까지<br>원장님 상담과 제품 교육에 바로 쓰실 수 있도록 정리했습니다.</p>
+    <div class="hero-stats">
+      <div class="hstat"><b>9종</b><span>PRODUCTS</span></div>
+      <div class="hstat"><b>6+3</b><span>FACE + SCALP</span></div>
+      <div class="hstat"><b>EV</b><span>공통 코어</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="chips">
+  <div class="chiprow">
+    <a href="#core">공통 코어</a>
+    <a href="#face">페이스 6종</a>
+    <a href="#scalp">두피 3종</a>
+    <a href="#compat">혼합 호환성</a>
+    <a href="#notice">표기 안내</a>
+  </div>
+</nav>
+
+<!-- ===================== 공통 코어 ===================== -->
+<section id="core">
+  <div class="wrap">
+    <div class="kicker">Common Core</div>
+    <h2>라인업 전체를 하나로 묶는 축</h2>
+    <p class="sec-lead">닥터배 제품은 개별 SKU의 나열이 아니라, <b>하나의 코어 원료 위에 서로 다른 역할을 얹은 구조</b>입니다. 각 제품 안에는 2~4개의 <b>하모닉 축(harmonic axis)</b>이 있고, 축들이 조합될 때 생기는 시너지가 제형의 본질입니다. 전성분표를 그대로 옮겨 적어도 같은 제품이 되지 않는 이유가 여기에 있습니다.</p>
+
+    <div class="core">
+      <div class="core-eye">Core Ingredient</div>
+      <h3>병풀캘러스세포외소포<br>— 식물 유래 세포외소포(EV)</h3>
+      <p>페이스 6종과 두피 3종을 관통하는 <b>공통 코어 원료</b>입니다. 제품마다 제형과 역할은 달라도, 이 축은 라인업 전체에서 동일하게 유지됩니다. 인체 유래가 아닌 <b>식물 유래 EV</b>로, 2025년 1월부터 '식물 엑소좀' 표현이 허용된 원료 카테고리입니다.</p>
+      <div class="core-grid">
+        <div class="core-item"><b>원료 축</b><span>식물 유래 세포외소포(EV) — 대학 연구실에서 시장으로 직접 이어진 원료</span></div>
+        <div class="core-item"><b>전달 축</b><span>마이크로젝션 — 각질층 수준의 고른 전달을 담당하는 비침습 미용기기</span></div>
+        <div class="core-item"><b>제형 축</b><span>바이알 · 겔 · 액상 · 동결건조 파우더 — 관리 단계별로 분리 설계</span></div>
+        <div class="core-item"><b>운영 축</b><span>바이알 단회용 밀봉 — 개봉 당일 1병 기준, 고객 앞 개봉 퍼포먼스</span></div>
+      </div>
+      <p style="margin-top:16px; font-size:.83rem; color:#8fb4d6;">아무리 좋은 활성 성분도 도포만으로는 각질층을 고르게 지나가기 어렵습니다. 닥터배가 <b>원료</b>와 <b>전달 기술</b>을 동시에 보유한 이유입니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 페이스 라인업 ===================== -->
+<section id="face">
+  <div class="wrap">
+    <div class="kicker">Face Line-up 6</div>
+    <h2>페이스 라인업 6종</h2>
+    <p class="sec-lead">각 제품을 눌러 <b>핵심 원료 · 조합 설계 · 전성분</b>을 확인하세요. 바이알 제품은 단회용 밀봉으로, 개봉 당일 1병 기준으로 사용합니다.</p>
+
+    <div class="acc">
+
+      <!-- 01 블루 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--blue)"></span>
+          <span class="p-name">엑소토카인 블루</span>
+          <span class="p-tag">페이스 메인 부스팅</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc">페이스 관리의 기준이 되는 <b>메인 스킨부스터 앰플</b>입니다. 식물 유래 세포외소포(EV) 위에 <b>아미노산 11종 · SH-펩타이드 9종 · 다층 항산화 네트워크</b>를 얹은 3중 레이어 구조로 설계되어 있습니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>페이스 메인 부스팅 앰플 · 5ml 단회용 바이알</span></div>
+            <div><b>사용법</b><span>도포 후 초음파 · 갈바닉 · 마이크로젝션으로 각질층 수준의 고른 전달</span></div>
+            <div><b>페어링</b><span>칼리파우더 용해 베이스 가능 · 핑크 진정팩으로 마무리</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · EV Core</div>
+              <div class="ax-t">병풀캘러스세포외소포 + 마데카소사이드</div>
+              <div class="ax-d">라인업 공통 코어. 부스터 제형에서도 EV 플랫폼을 그대로 유지합니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · Amino Matrix</div>
+              <div class="ax-t">아미노산 11종</div>
+              <div class="ax-d">필수아미노산 9종(히스티딘 · 아이소류신 · 류신 · 라이신 · 메티오닌 · 페닐알라닌 · 트레오닌 · 트립토판 · 발린) + 알지닌 + 시스테인. 피부 자연 보습 인자(NMF)와 유사한 구성입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Peptide Architecture</div>
+              <div class="ax-t">SH-펩타이드 9종</div>
+              <div class="ax-d">SH-올리고펩타이드-1 · -2, SH-폴리펩타이드-1 · -2 · -3 · -4 · -9 · -11 · -22. 서로 다른 분자 구조의 다층 펩타이드 조합입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · Antioxidant Network</div>
+              <div class="ax-t">NMN + 4종 항산화 원료</div>
+              <div class="ax-d">니코틴아마이드모노뉴클레오타이드(NMN)에 나이아신아마이드 · 페룰릭애씨드 · 글루타티온 · 소듐아스코빌포스페이트를 더한 다층 네트워크. 여기에 루페올 · 판테놀 · 하이드롤라이즈드디엔에이가 컨디셔닝 축으로 붙습니다.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li><b>수분(NMF) · 컨디셔닝(펩타이드) · 방어(항산화)</b>가 한 병 안에서 층을 이루므로, 부스팅 단계 하나로 관리의 중심을 잡을 수 있습니다.</li>
+            <li>아미노산 복합이 각질층의 수분 환경을 먼저 정돈해, 뒤따르는 펩타이드 축이 고르게 퍼지는 바탕이 됩니다.</li>
+            <li><b>잔탄검 기반 점도</b>로 설계되어 마이크로젝션 스탬프 헤드에 머무르며, 칼슘 이온에도 안정적이라 칼리파우더 용해 베이스로 쓸 수 있습니다.</li>
+          </ul>
+
+          <div class="edge"><b>차별성 —</b> 닥터배 라인업에서 마이크로젝션 <b>스탬핑에 결합 가능한 앰플은 블루와 핑크 2종뿐</b>입니다. 점도가 성분만큼이나 의도적으로 설계된 제품입니다.</div>
+
+          <div class="caution"><b>사용 유의 ·</b> 단회용 바이알로, 개봉 당일 소진합니다. <b>블루 → 핑크 순차 이중 스탬프는 하지 않습니다</b>(자극 중첩).</div>
+
+          <details class="inci">
+            <summary>전성분 INCI</summary>
+            <div class="inci-pending">※ 용기 표기 기준 전성분 원문을 확인 중입니다. 확인 즉시 이 항목에 반영됩니다. 현재는 위 <b>Harmonic Architecture</b>의 핵심 원료 구성을 기준으로 안내해 주십시오.</div>
+          </details>
+        </div>
+      </details>
+
+      <!-- 02 핑크 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--pink)"></span>
+          <span class="p-name">피디로엔 핑크</span>
+          <span class="p-tag">진정 · 장벽 케어</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc">진정 케어의 중심 제품입니다. <b>마이크로바이옴 · PDRN 컨셉 · 다층 진정 복합</b>을 함께 담아, 관리 마지막의 진정팩 단계와 손상 장벽 급성기 고객의 <b>장벽 케어 메인</b>으로 사용합니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>진정 · 장벽 케어 앰플 · 단회용 바이알</span></div>
+            <div><b>사용법</b><span>부스팅 이후 진정팩 마무리 · 급성기에는 단독 메인으로 운용</span></div>
+            <div><b>페어링</b><span>블루 부스팅 후 마무리 · 칼리파우더 용해 베이스 가능</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · Microbiome</div>
+              <div class="ax-t">락토바실러스발효추출여과물</div>
+              <div class="ax-d">유익균 대사산물 기반의 피부 컨디셔닝 축입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · PDRN Concept</div>
+              <div class="ax-t">하이드롤라이즈드디엔에이 + 하이드롤라이즈드콜라겐</div>
+              <div class="ax-d">DNA 분해 단편 형태의 화장품 등급 원료에 저분자 콜라겐 단편을 더한 보습·컨디셔닝 구성.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Soothing Complex</div>
+              <div class="ax-t">프로폴리스 · 오레가노 · 마데카소사이드</div>
+              <div class="ax-d">성격이 다른 세 갈래의 다층 진정 복합. 판테놀 · 알란토인 · 베타인 · 트레할로오스가 수분·보호 레이어로 함께 작동합니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · Tone &amp; Peptide</div>
+              <div class="ax-t">트라넥사믹애씨드 + SH-폴리펩타이드-60 + B12</div>
+              <div class="ax-d">컨디션이 무너진 뒤 남는 톤 불균형을 정돈하는 축에 펩타이드와 비타민 B12를 더한 구성.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li><b>진정 · 보습 · 톤 정돈</b>이 한 제품에 겹쳐 있어, 자극 관리 이후 단계를 한 병으로 닫을 수 있습니다.</li>
+            <li>다층 진정 복합 덕분에 <b>예민 · 손상 장벽 급성기 고객에게도 메인 자리</b>를 맡길 수 있습니다.</li>
+            <li>점증제가 <b>설포네이트 계열</b>이라 칼슘 이온에 안정적입니다 — 칼리파우더를 녹여도 제형이 무너지지 않습니다.</li>
+          </ul>
+
+          <div class="edge"><b>차별성 —</b> 진정 제품이면서도 <b>스탬핑 점도를 유지</b>합니다. "진정=마무리용"이라는 통념과 달리, 장벽이 약한 고객에게는 이 제품이 프로그램의 주인공이 됩니다.</div>
+
+          <div class="caution"><b>사용 유의 ·</b> 단회용 바이알, 개봉 당일 소진. <b>프로폴리스추출물이 포함</b>되어 있으므로 봉산물 알레르기 이력이 있는 고객은 사전에 확인하십시오.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI</summary>
+            <div class="inci-pending">※ 용기 표기 기준 전성분 원문을 확인 중입니다. 확인 즉시 이 항목에 반영됩니다. 현재는 위 <b>Harmonic Architecture</b>의 핵심 원료 구성을 기준으로 안내해 주십시오.</div>
+          </details>
+        </div>
+      </details>
+
+      <!-- 03 리퀴드 마스크 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:#5aa0d8"></span>
+          <span class="p-name">엑소토카인 리퀴드 마스크</span>
+          <span class="p-tag">소프트필 · No-Rinse</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc"><b>PHA 10%(글루코노락톤)</b>와 식물 유래 EV를 담은 6세대 소프트필입니다. 각질을 부드럽게 정돈하면서 <b>같은 제형 안에서 진정과 수분 축을 동시에</b> 채우기 때문에, 중화·세정 없이 다음 단계로 이어갈 수 있습니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>각질 정돈 · 프로그램 도입부</span></div>
+            <div><b>사용법</b><span>클렌징 후 붓 도포, 씻어내지 않고 다음 단계로 연결</span></div>
+            <div><b>페어링</b><span>소프트필 프로그램은 초음파 · 갈바닉 기기로만 구성</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · PHA 10%</div>
+              <div class="ax-t">글루코노락톤</div>
+              <div class="ax-d">약 180 Da의 폴리하이드록시애씨드. 분자량이 커 각질 표층 위주로 작용하며, 자체 항산화 특성을 가집니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · EV Core</div>
+              <div class="ax-t">병풀캘러스세포외소포</div>
+              <div class="ax-d">각질 정돈이 진행되는 동안 진정 · 컨디셔닝 축을 함께 제공합니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Calming Pair</div>
+              <div class="ax-t">알란토인 + 다이포타슘글리시리제이트</div>
+              <div class="ax-d">감초 유래 성분을 포함한 진정 서포트. 예민한 피부의 각질 단계를 받쳐 줍니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · Multi-MW HA</div>
+              <div class="ax-t">히알루론산 8종 + 판테놀 · 글라이코리피드</div>
+              <div class="ax-d">소듐형 · 포타슘형 · 트라이모늄형 · 가수분해 2종 · 원형 · 크로스폴리머 · 아세틸화. 각질 정돈 단계의 수분 손실을 층별로 보완합니다.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li><b>계면활성제를 배제</b>한 제형이라 중화·세정 절차가 없습니다. 도포 후 그대로 마무리 → 관리 회전율이 올라갑니다.</li>
+            <li>각질 정돈(PHA)과 수분 보충(HA 8종)이 <b>같은 순간에</b> 일어나므로, 필링 후 흔한 건조·당김 구간이 짧아집니다.</li>
+            <li>PHA로 각질이 정돈된 상태에서 후속 부스터가 고르게 퍼져, <b>프로그램 도입부로서의 값</b>이 분명합니다.</li>
+          </ul>
+
+          <div class="edge"><b>차별성 —</b> HA 8종 구성은 <b>토코포르테와 동일한 수분 매트릭스 설계</b>입니다. 필링 제품이 아니라 "각질 정돈 기능이 있는 부스터"에 가깝게 읽으시면 프로그램 배치가 쉬워집니다.</div>
+
+          <div class="forbid"><b>절대 금기 ·</b> 소프트필 이후 <b>같은 세션에 마이크로젝션을 병행하지 마십시오</b>(자극 중첩). 두 가지를 모두 운용하실 경우 반드시 방문 회차를 나누어 교차 배치합니다.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI</summary>
+            <div class="inci-pending">※ 용기 표기 기준 전성분 원문을 확인 중입니다. 확인 즉시 이 항목에 반영됩니다. 현재는 위 <b>Harmonic Architecture</b>의 핵심 원료 구성을 기준으로 안내해 주십시오.</div>
+          </details>
+        </div>
+      </details>
+
+      <!-- 04 토코포르테 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--brown)"></span>
+          <span class="p-name">토코포르테 브라운</span>
+          <span class="p-tag">페이스 + 두피 · 쿨링 피날레</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc"><b>비타민 11종 + 비타민 유사 원료 3종</b>을 담은 액상 앰플입니다. 물에 가까운 저점도라 에어건 분사에 최적화되어 있으며, 미세 분사 시 기화열로 피부 표면의 열감을 식혀 <b>관리의 마지막을 쿨링으로 닫는</b> 역할을 맡습니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>프로그램 마지막 쿨링 피날레 · 페이스 · 두피 공용</span></div>
+            <div><b>사용법</b><span>에어건 분사 권장 (손 도포도 가능) · 스탬프 결합 불가</span></div>
+            <div><b>페어링</b><span>모든 페이스 프로그램의 마무리 · 칼리파우더 용해 베이스 가능</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · 5-Tier Antioxidant</div>
+              <div class="ax-t">5단 항산화 캐스케이드</div>
+              <div class="ax-d">페룰릭애씨드 · 3-O-에틸아스코빅애씨드 · 아스코빅애씨드 · 토코페롤 · 글루타티온. 수용성과 지용성 항산화 원료를 5단으로 층화했습니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · Vitamin Spectrum</div>
+              <div class="ax-t">비타민 11종 + 유사 원료 3종</div>
+              <div class="ax-d">비타민 B군 7종(B1 · B3 · B5 · B6 · B7 · B9 · B12) + 비타민 C 2형태 · E · K = 11종. 여기에 이노시톨 · 카르니틴 · 퀘세틴이 비타민 유사 원료로 더해집니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Multi-MW HA</div>
+              <div class="ax-t">히알루론산 8종</div>
+              <div class="ax-d">초저분자부터 크로스폴리머까지 풀 스펙트럼으로, 각질층의 층별 수분 매트릭스를 형성합니다. (리퀴드 마스크와 동일 구성)</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · EV + Anchor</div>
+              <div class="ax-t">병풀 EV + 퀘세틴 · 카르니틴 · 시스테인</div>
+              <div class="ax-d">병풀수와 병풀캘러스세포외소포에 앵커 원료가 결합된 컨디션 정돈 축입니다.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li><b>저점도 설계가 곧 기능</b>입니다. 에어건 미세 분사 시 기화열이 발생해 관리 중 올라간 열감을 물리적으로 정돈합니다.</li>
+            <li>항산화 5단 · 비타민 14종 · HA 8종이 겹쳐 있어, <b>마무리 단계 하나로 영양 · 수분 · 방어</b>를 동시에 채웁니다.</li>
+            <li>손 도포로도 어느 단계에나 끼워 넣을 수 있어, 에어건이 없는 샵에서도 도입 장벽이 낮습니다.</li>
+            <li>여름 피부열 케어 · 주사(rosacea) 성향 고객의 <b>최종 쿨링 미스트</b> 단계로 배치하기 좋습니다.</li>
+          </ul>
+
+          <div class="edge"><b>차별성 —</b> 전성분 37종 중 비타민 계열만 14종입니다. 성분 개수가 아니라 <b>수용성·지용성을 층으로 나눈 배치</b>가 이 제품의 설계 포인트입니다.</div>
+
+          <div class="caution"><b>사용 유의 ·</b> ① 물에 가까운 액상이라 <b>마이크로젝션 스탬프에 결합할 수 없습니다</b>(에어건·손 도포 전용). ② <b>항상 프로그램의 마지막</b> 쿨링 단계에 배치합니다. ③ <b>메나다이온(비타민 K)</b>이 포함되어 있어 임신·수유 중 고객에게는 적용을 보류하십시오. ④ 단회용 바이알, 개봉 당일 소진.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI · 37종</summary>
+            <div class="inci-body">병풀수, 나이아신아마이드, 프로판다이올, 부틸렌글라이콜, 1,2-헥산다이올, 카프릴릴글라이콜, 판테놀, 폴리글리세릴-10라우레이트, 아데노신, 폴리글리세릴-10미리스테이트, 글리세린, 페룰릭애씨드, 3-O-에틸아스코빅애씨드, 시트릭애씨드, 토코페롤, 글루타티온, 아스코빅애씨드, 소듐하이알루로네이트, 포타슘하이알루로네이트, 하이드록시프로필트라이모늄하이알루로네이트, 하이드롤라이즈드소듐하이알루로네이트, 하이드롤라이즈드하이알루로닉애씨드, 하이알루로닉애씨드, 병풀캘러스세포외소포, 펜틸렌글라이콜, 소듐하이알루로네이트크로스폴리머, 티아민에이치씨엘, 소듐아세틸레이티드하이알루로네이트, 피리독신, 이노시톨, 폴릭애씨드, 시스테인, 사이아노코발아민, 카르니틴, 바이오틴, 메나다이온, 퀘세틴
+              <div class="inci-note">전성분은 함량이 높은 순으로 표기됩니다.</div>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <!-- 05 칼리파우더 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--green)"></span>
+          <span class="p-name">칼리파우더</span>
+          <span class="p-tag">동결건조 믹스인 파우더</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc">동결건조(lyophilized) 유리 바이알에 담긴 <b>믹스인 부스팅 파우더</b>입니다. 단독으로 쓰는 제품이 아니라, 관리 직전 앰플에 녹여 <b>농도를 한 단계 올리는 옵션</b>입니다. 고객 앞에서 바이알을 열고 녹이는 절차 자체가 프리미엄 티어의 체감 근거가 됩니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>앰플에 더하는 부스팅 파우더 · 업셀링 전용</span></div>
+            <div><b>사용법</b><span>에센스겔을 제외한 스킨부스터 5종(블루 · 핑크 · 토코포르테 · 리퀴드 마스크 · 블랙)에 용해</span></div>
+            <div><b>페어링</b><span>기본 프로그램에 익숙해진 뒤 업그레이드 옵션으로 도입</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 3축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · Calcium + B5</div>
+              <div class="ax-t">칼슘판토테네이트</div>
+              <div class="ax-d">칼슘 이온과 판토텐산(B5)이 하나의 분자로 결합된 원료. 표피 칼슘 그래디언트 컨셉의 중심 축입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · Peptide Backbone</div>
+              <div class="ax-t">하이드롤라이즈드콜라겐</div>
+              <div class="ax-d">가수분해 콜라겐 펩타이드. 보습 기반의 영양 레이어를 더합니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Hydration + Stabilizer</div>
+              <div class="ax-t">소듐하이알루로네이트 + 만니톨</div>
+              <div class="ax-d">HA의 보습에 만니톨의 동결건조 안정화와 가벼운 삼투 조율이 더해집니다.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li>정제수(매질) + 만니톨(안정화) + HA(수화 환경) + 콜라겐(구조 소재) + 칼슘판토테네이트(핵심 축) — <b>5종이 동시에 작동할 때</b> 동결건조 전 과정의 안정성과 용해 후 시너지가 함께 완성됩니다.</li>
+            <li>칼슘 · 히알루론산처럼 <b>깨질 고차 구조가 없는 원료</b>에는 동결건조가 신선도·보관 안정성 면에서 유리합니다. (반대로 지질이중층을 갖는 EV는 액상 보존이 유리 — 원료 성질에 따라 공정을 다르게 선택한 결과입니다.)</li>
+            <li>객단가 설계 관점에서, <b>바이알이 하나 더 열리는 것을 고객이 눈으로 확인</b>하므로 가격 차이를 따로 설명할 필요가 없습니다.</li>
+          </ul>
+
+          <div class="edge"><b>상담 스크립트 — "칼슘 제품인데 왜 전성분표에 칼슘이 없나요?"</b><br>화장품 전성분은 원료 자체의 INCI명으로 표기합니다. <b>"칼슘판토테네이트"라는 이름 안에 이미 칼슘(Calcium)이 들어 있습니다.</b> 칼슘이 없는 것이 아니라, 표기 원칙에 따라 원료명으로 적혀 있는 것입니다.</div>
+
+          <div class="forbid"><b>절대 규칙 ·</b> ① <b>단독 사용 금지</b> — 반드시 호환 부스터에 용해합니다. ② <b>에센스겔과 직접 혼합 금지</b> — 칼슘판토테네이트에서 방출된 Ca²⁺(2가 양이온)가 에센스겔의 음이온성 점증제 사슬을 동시에 붙잡아 그물망을 붕괴시킵니다(꾸덕한 겔이 물처럼 변하는 원인). 함께 쓰실 때는 토코포르테 등에 용해한 뒤 <b>별도 단계로 레이어링</b>하십시오.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI · 5종</summary>
+            <div class="inci-body">정제수, 소듐하이알루로네이트, 만니톨, 하이드롤라이즈드콜라겐, 칼슘판토테네이트
+              <div class="inci-note">전성분은 함량이 높은 순으로 표기됩니다.</div>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <!-- 06 에센스겔 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--gold)"></span>
+          <span class="p-name">에센스겔 500ml / 150ml</span>
+          <span class="p-tag">페이스 + 데콜테 · 매뉴얼 베이스</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc">오일프리 <b>수성 카보머 겔</b> 타입의 매뉴얼 · 믹싱 베이스입니다. 처음에는 롤링이 잘 되도록 미끌거리는 겔감으로 설계되었고, <b>1~2분 롤링하면 100% 흡수</b>되어 잔여감 없이 사라집니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>매뉴얼 테크닉 · 기기 관리 공용 베이스 (얼굴 · 데콜테)</span></div>
+            <div><b>사용법</b><span>단독 매뉴얼 관리 또는 앰플 직전 베이스로 사용</span></div>
+            <div><b>페어링</b><span>블루 · 핑크 앰플과 함께 부스팅 단계 구성</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · Centella Trinity</div>
+              <div class="ax-t">병풀 트리테르페노이드 3종</div>
+              <div class="ax-d">마데카식애씨드 · 아시아틱애씨드 · 아시아티코사이드. 병풀 유효 활성물 3종을 모두 넣은 완전체 조합입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · EV Core</div>
+              <div class="ax-t">병풀캘러스세포외소포</div>
+              <div class="ax-d">겔 제형에서도 EV 플랫폼을 유지 — 마사지 내내 표피 표층에 일관되게 노출됩니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · PGA Hydration</div>
+              <div class="ax-t">폴리글루타믹애씨드</div>
+              <div class="ax-d">낫토 유래 고분자 보습 인자(γ-PGA). HA와는 다른 방식의 고분자 수분 포집 축을 형성합니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · Slip Polymer</div>
+              <div class="ax-t">아크릴레이트 코폴리머 네트워크</div>
+              <div class="ax-d">암모늄아크릴로일다이메틸타우레이트/VP코폴리머 + 아크릴레이트/C10-30알킬아크릴레이트크로스폴리머. 롤링감과 점도를 만드는 물리적 축입니다.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li><b>흡수되어 사라지는 것이 기능</b>입니다. 다음 단계 제품이 밀리거나 끈적이지 않아, 매뉴얼 → 부스터 동선이 끊기지 않습니다.</li>
+            <li>오일프리 수성이라 소수성 막을 만들지 않습니다. <b>겔로 각질층을 먼저 수화</b>시켜 두면 뒤따르는 수용성 부스터가 더 고르게 퍼집니다 — '에센스겔 → 바이알 부스터' 순서를 권하는 이유입니다.</li>
+            <li>병풀 3종 + γ-PGA + EV가 함께 있어, 단독 매뉴얼 관리만으로도 <b>보급형 프로그램 하나를 구성</b>할 수 있습니다.</li>
+            <li>500ml · 150ml 두 용량으로 샵 운용과 홈케어 연계를 분리할 수 있습니다.</li>
+          </ul>
+
+          <div class="edge"><b>차별성 —</b> "올인원 크림"이 아니라 <b>전문가용 베이스</b>입니다. 홈케어로 판매하실 때는 수분감을 원하면 수분 크림, 오일리한 마무리를 원하면 리치 크림을 이어서 쓰도록 안내해 주십시오.</div>
+
+          <div class="caution"><b>사용 유의 ·</b> ① <b>칼리파우더와 직접 혼합 금지</b>(Ca²⁺가 카보머 계열 겔 네트워크를 붕괴). ② 전성분에 <b>향료</b>가 포함되어 있으므로 향에 극도로 민감한 고객에게는 사전 안내와 패치 테스트를 권장합니다. ③ 향료를 최소화한 설계라 로트에 따라 원료 고유의 냄새가 느껴질 수 있습니다 — 평소와 명백히 다른 이취가 있으면 무상 교환으로 처리하십시오.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI · 13종</summary>
+            <div class="inci-body">정제수, 암모늄아크릴로일다이메틸타우레이트/브이피코폴리머, 아크릴레이트/C10-30알킬아크릴레이트크로스폴리머, 폴리글루타믹애씨드, 병풀캘러스세포외소포, 마데카식애씨드, 아시아틱애씨드, 아시아티코사이드, 1,2-헥산다이올, 에틸헥실글리세린, 소듐하이알루로네이트, 글리세린, 향료
+              <div class="inci-note">전성분은 함량이 높은 순으로 표기됩니다.</div>
+            </div>
+          </details>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 두피 라인업 ===================== -->
+<section id="scalp">
+  <div class="wrap">
+    <div class="kicker">Scalp Line-up 3</div>
+    <h2>두피 라인업 3종</h2>
+    <p class="sec-lead">두피 전용 3종입니다. 페이스 라인업의 <b>토코포르테 브라운</b>과 <b>칼리파우더</b>는 두피 관리에도 함께 사용할 수 있습니다.</p>
+
+    <div class="acc">
+
+      <!-- 07 블랙 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--black)"></span>
+          <span class="p-name">엑소토카인 블랙 포 스칼프</span>
+          <span class="p-tag">두피 전용 앰플</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc">두피 프로그램에서 <b>메인 스킨부스터 자리</b>를 차지하는 5ml 고농도 바이알입니다. 가르마 라인과 모근 주변에 집중 도포하며, 고객 앞에서 유리 바이알을 개봉하는 절차가 체감 가치의 핵심입니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>두피 메인 부스터 · 5ml 단회용 바이알</span></div>
+            <div><b>사용법</b><span>가르마 · 모근 주변 집중 도포 후 마이크로젝션 또는 기기 전달</span></div>
+            <div><b>페어링</b><span>칼리파우더 용해 가능 · 토코포르테 에어건으로 마무리</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · EV Core</div>
+              <div class="ax-t">병풀캘러스세포외소포</div>
+              <div class="ax-d">라인업 공통 코어이자 두피 컨디션 정돈의 중심 축입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · Peptide Architecture</div>
+              <div class="ax-t">펩타이드 9종 콤플렉스</div>
+              <div class="ax-d">노나펩타이드-1 · 다이펩타이드-2 · 아세틸테트라펩타이드-5 · 아세틸헥사펩타이드-8 · 카퍼트라이펩타이드-1 · 트라이펩타이드-1 · 팔미토일트라이펩타이드-1 · 헥사펩타이드-9 · 팔미토일펜타펩타이드-4.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Vitality Trio</div>
+              <div class="ax-t">카페인 + 바이오틴 + 덱스판테놀</div>
+              <div class="ax-d">두피·모발 케어의 전통 원료 조합. 나이아신아마이드와 결합해 모근 주위 활력감 레이어를 구성합니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · Clarity + Cool</div>
+              <div class="ax-t">BHA + 멘톨 + 식물 추출물 7종</div>
+              <div class="ax-d">살리실릭애씨드 · L-멘톨에 뱀딸기 · 병풀잎 · 다시마 · 석창포 · 쇠비름 · 약모밀 · 은행나무잎 추출물과 발효·기타 원료 3종(락토바실러스 플란타룸 · 로얄젤리 · 맥주효모)이 더해진 구성.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li>펩타이드 9종이 서로 다른 분자 구조로 <b>다층 건축</b>을 이루어, 단일 펩타이드 제품과 구성 밀도가 다릅니다.</li>
+            <li><b>영양 축(펩타이드·비타민)과 정돈 축(BHA·허브)</b>이 한 병에 함께 있어, 두피 유·수분 밸런스가 무너진 상태에서도 메인으로 쓸 수 있습니다.</li>
+            <li>멘톨의 쿨링 마무리가 있어 도포 직후 체감이 분명합니다 — 고객 설득이 쉬운 제품입니다.</li>
+          </ul>
+
+          <div class="forbid"><b>얼굴 사용 금지 ·</b> L-멘톨을 함유한 <b>두피 전용</b> 제품입니다. 얼굴에는 사용하지 마십시오. 두피 라인과 페이스 라인을 <b>같은 트레이에 두지 않는 것</b>을 운영 원칙으로 권합니다.</div>
+
+          <div class="caution"><b>사용 유의 ·</b> ① <b>에탄올이 함유</b>되어 있으므로 알코올에 민감한 두피는 강도를 조절하십시오. ② 전성분에 <b>로얄젤리</b>가 포함되어 있어 봉산물 알레르기 이력 고객은 사전 확인이 필요합니다. ③ 임신·수유 중 고객은 적용을 보류하십시오. ④ 단회용 바이알, 개봉 당일 소진.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI · 38종</summary>
+            <div class="inci-body">병풀잎수, 부틸렌글라이콜, 프로판다이올, 정제수, 에탄올, 1,2-헥산다이올, 피이지-60하이드로제네이티드캐스터오일, 나이아신아마이드, 덱스판테놀, 잔탄검, 엘멘톨, 살리실릭애씨드, 뱀딸기추출물, 병풀잎, 다시마추출물, 석창포추출물, 쇠비름추출물, 약모밀추출물, 은행나무잎추출물, 락토바실러스 플란타룸, 로얄젤리, 맥주효모추출물, 바이오틴, 알라닌, 카페인, 글리세린, 병풀캘러스세포외소포, 노나펩타이드-1, 다이펩타이드-2, 아세틸테트라펩타이드-5, 아세틸헥사펩타이드-8, 카퍼트라이펩타이드-1, 트라이펩타이드-1, 팔미토일트라이펩타이드-1, 헥사펩타이드-9, 팔미토일펜타펩타이드-4, 에틸헥실글리세린, 카프릴릴글라이콜
+              <div class="inci-note">전성분은 함량이 높은 순으로 표기됩니다.</div>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <!-- 08 샴푸 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--gray)"></span>
+          <span class="p-name">엑소토카인 샴푸 500ml</span>
+          <span class="p-tag">홈케어 · Rinse-off</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc">모든 두피 프로그램의 <b>프리워시 단계</b>이자 <b>홈케어 루틴의 중심</b> 제품입니다. 샵의 1차 클렌징을 담당하고, 고객이 집에서도 같은 감도로 두피 환경을 유지하도록 설계되었습니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>프리워시 · 홈케어 업셀링의 핵심 허브</span></div>
+            <div><b>사용법</b><span>관리 시작 시 1차 클렌징 · 고객 홈케어 판매 품목</span></div>
+            <div><b>페어링</b><span>홈케어 2종 구성 — 샴푸 + 블랙 포 스칼프</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · Soothing Quartet</div>
+              <div class="ax-t">녹차 · 약모밀 · 황금 · 소엽잎</div>
+              <div class="ax-d">진정·정돈 컨셉으로 널리 쓰이는 4종 식물 추출물 세트입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · Micro-Absorb Concept</div>
+              <div class="ax-t">하이드롤라이즈드해면</div>
+              <div class="ax-d">마이크로젝션 기술과 같은 '흡수 컨셉'을 샴푸 제형에 옮겨 담은 파생 원료입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Mild Cleanser Complex</div>
+              <div class="ax-t">라우레스 + 베타인 + 글루코사이드</div>
+              <div class="ax-d">다이소듐라우레스설포석시네이트 + 코코-베타인 + 코코-글루코사이드의 순한 저자극 계면활성제 복합입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · Keratin + Refresh</div>
+              <div class="ax-t">케라틴 + 판테놀 + BHA + 멘톨</div>
+              <div class="ax-d">하이드롤라이즈드케라틴(모발 윤기) · 판테놀(두피 영양감) · 살리실릭애씨드(각질 정돈) · L-멘톨(상쾌감)로 모발과 두피를 동시에 다룹니다.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li>세정력을 계면활성제 <b>한 종에 의존하지 않고 3종 복합</b>으로 나눠, 자극을 낮추면서 세정감을 확보했습니다.</li>
+            <li><b>모발 축(케라틴)과 두피 축(BHA·판테놀)</b>이 분리되어 있어, 샵 관리와 홈케어에서 같은 방향을 유지합니다.</li>
+            <li>샵에서 쓴 제품을 그대로 판매하므로, <b>홈케어 업셀링의 설명이 필요 없습니다</b>.</li>
+          </ul>
+
+          <div class="edge"><b>운영 팁 —</b> 홈케어 판매 품목은 <b>샴푸 + 블랙 포 스칼프 2종으로 압축</b>하고, 스칼프 부스터 500ml는 샵 전용으로 운용하시는 편이 재고와 상담 모두 단순해집니다.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI · 22종</summary>
+            <div class="inci-body">정제수, 녹차추출물, 약모밀추출물, 다이소듐라우레스설포석시네이트, 코코-베타인, 소엽잎추출물, 소듐하이알루로네이트, 코코-글루코사이드, 폴리글리세릴-10미리스테이트, 글리세린, 베타인, 판테놀, 하이드롤라이즈드케라틴, 폴리쿼터늄-10, 1,2-헥산다이올, 황금추출물, 살리실릭애씨드, 엘-멘톨, 덱스판테놀, 하이드롤라이즈드해면, 다이소듐이디티에이, 향료
+              <div class="inci-note">전성분은 함량이 높은 순으로 표기됩니다.</div>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <!-- 09 스칼프 부스터 -->
+      <details class="item">
+        <summary>
+          <span class="dot" style="background:var(--teal)"></span>
+          <span class="p-name">스칼프 부스터 500ml</span>
+          <span class="p-tag">Leave-on · 샵 전용</span>
+          <span class="caret">▾</span>
+        </summary>
+        <div class="panel">
+          <p class="desc">두피 스티머에 투입해 <b>수증기 형태로 두피 전반에 도포</b>하는 프로그램 초반의 각질 정돈 부스터입니다. 대용량 제형으로 입문 티어 프로그램의 핵심 구성이 됩니다.</p>
+          <div class="meta">
+            <div><b>포지션</b><span>프로그램 초반 각질 정돈 단계 · 샵 전용 (홈케어 판매 품목 아님)</span></div>
+            <div><b>사용법</b><span>두피 스티머에 투입해 스팀 도포 · 약 10~12분</span></div>
+            <div><b>페어링</b><span>프리워시(샴푸) 이후 → 블랙 포 스칼프 부스팅 전 단계</span></div>
+          </div>
+
+          <div class="blk-title">Harmonic Architecture · 4축</div>
+          <div class="axes">
+            <div class="axis">
+              <div class="ax-n">Axis 1 · Herbal Decalog</div>
+              <div class="ax-t">10종 허브 추출물 블렌드</div>
+              <div class="ax-d">마트리카리아 · 베르가못 · 오레가노 · 애플민트 · 살비아 · 스피어민트 · 티트리 · 페퍼민트 · 라벤더 · 와일드제라늄.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 2 · AHA + BHA</div>
+              <div class="ax-t">글라이콜릭 + 살리실릭애씨드</div>
+              <div class="ax-d">수용성 각질 정돈 듀얼. 스티머의 열과 결합할 때 정돈감이 증폭됩니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 3 · Cool-Fresh</div>
+              <div class="ax-t">멘톨 + 변성알코올</div>
+              <div class="ax-d">스팀 환경에서 쿨링·상쾌감의 체감을 끌어올리는 물리적 축입니다.</div>
+            </div>
+            <div class="axis">
+              <div class="ax-n">Axis 4 · EV + PGA</div>
+              <div class="ax-t">병풀 EV + 폴리글루타믹애씨드</div>
+              <div class="ax-d">각질 정돈 단계에서도 수분감을 잃지 않도록 라인업 공통 축과 연결합니다.</div>
+            </div>
+          </div>
+
+          <div class="blk-title kr">원료 조합에서 오는 강점</div>
+          <ul class="pts">
+            <li>AHA와 BHA를 함께 써 <b>각질과 과잉 유분을 동시에</b> 정돈합니다. 스팀 열이 이 단계의 체감을 크게 올립니다.</li>
+            <li>허브 10종 블렌드로 <b>정돈과 진정이 같은 단계</b>에서 이루어져, 산 단계 특유의 건조감이 덜합니다.</li>
+            <li>대용량 제형이라 <b>바이알을 열지 않고도 입문가 프로그램을 구성</b>할 수 있습니다 — 신규 고객 후킹용 원가 설계에 유리합니다.</li>
+          </ul>
+
+          <div class="caution"><b>사용 유의 ·</b> ① <b>Leave-on 제형에 살리실릭애씨드</b>가 들어 있어 임신·수유 중 고객에게는 조건부(소량 · 짧은 접촉 · 헹굼)로만 적용하십시오. ② 멘톨 함유 — <b>얼굴에는 사용하지 않습니다</b>. ③ 변성알코올이 포함되어 있어 알코올 민감 두피는 강도를 조절합니다.</div>
+
+          <details class="inci">
+            <summary>전성분 INCI · 30종</summary>
+            <div class="inci-body">정제수, 다이프로필렌글라이콜, 글리세린, 변성알코올, 프로필렌글라이콜, 1,2-헥산다이올, 코코-베타인, 글라이콜릭애씨드, 알지닌, 폴리글리세릴-10라우레이트, 멘톨, 소듐클로라이드, 하이드록시시트로넬알, 마트리카리아꽃추출물, 베르가못잎추출물, 오레가노잎추출물, 애플민트잎추출물, 살비아잎추출물, 스피어민트잎추출물, 티트리잎추출물, 페퍼민트잎추출물, 라벤더꽃추출물, 와일드제라늄추출물, 살리실릭애씨드, 효모추출물, 병풀캘러스세포외소포, 폴리글루타믹애씨드, 에틸헥실글리세린, 다이소듐이디티에이, 향료
+              <div class="inci-note">전성분은 함량이 높은 순으로 표기됩니다.</div>
+            </div>
+          </details>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 혼합 호환성 ===================== -->
+<section id="compat">
+  <div class="wrap">
+    <div class="kicker">Compatibility</div>
+    <h2>혼합 호환성 한눈에</h2>
+    <p class="sec-lead">제품을 섞을 수 있는지는 취향이 아니라 <b>제형의 점증제 종류</b>로 결정됩니다. 칼리파우더의 Ca²⁺(2가 양이온)가 어떤 점증제와 만나느냐가 기준입니다.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>제품</th><th>점증 · 제형 기반</th><th>칼리파우더 용해</th><th>마이크로젝션 스탬핑</th></tr>
+        <tr><td><b>엑소토카인 블루</b></td><td>잔탄검 기반</td><td class="ok">✓ 가능</td><td class="ok">✓ 가능</td></tr>
+        <tr><td><b>피디로엔 핑크</b></td><td>설포네이트계 (Ca²⁺ 안정)</td><td class="ok">✓ 가능</td><td class="ok">✓ 가능</td></tr>
+        <tr><td><b>리퀴드 마스크</b></td><td>저점도</td><td class="ok">✓ 가능</td><td class="no">✗ 동일 세션 금기</td></tr>
+        <tr><td><b>토코포르테 브라운</b></td><td>액상 · 저점도</td><td class="ok">✓ 가능</td><td class="no">✗ 흘러내림 (에어건 전용)</td></tr>
+        <tr><td><b>블랙 포 스칼프</b></td><td>잔탄검 기반 · 두피 전용</td><td class="ok">✓ 가능</td><td class="ok">✓ 가능 (두피)</td></tr>
+        <tr><td><b>에센스겔</b></td><td>카보머 계열 (카복실기)</td><td class="no">✗ 직접 혼합 금지</td><td>— 베이스 용도</td></tr>
+      </table>
+    </div>
+
+    <div class="forbid" style="margin-top:14px;"><b>왜 에센스겔만 안 되는가 —</b> 카보머 계열 점증제는 카복실기(음전하)로 그물망을 만듭니다. Ca²⁺는 전하가 2개라 서로 다른 사슬 두 개를 <b>동시에 붙잡아 가교·수축</b>시키고, 그 결과 그물망이 무너져 점도가 사라집니다. 꾸덕한 겔이 물처럼 변하는 현상이 이것입니다. → 혼합하지 마시고 <b>별도 단계로 레이어링</b>하십시오.</div>
+
+    <div class="caution"><b>세션 설계 규칙 ·</b> ① 소프트필(리퀴드 마스크) 프로그램은 초음파 · 갈바닉만 사용하며, <b>같은 세션에 마이크로젝션을 넣지 않습니다.</b> ② 토코포르테 에어건은 <b>항상 프로그램의 마지막</b> 쿨링 단계입니다. ③ 블루 → 핑크 <b>순차 이중 스탬프는 하지 않습니다.</b> ④ 페이스에는 <b>멘톨 함유 제품(블랙 · 스칼프 부스터 · 샴푸)을 사용하지 않습니다.</b></div>
+  </div>
+</section>
+
+<!-- ===================== 표기 안내 ===================== -->
+<section id="notice">
+  <div class="wrap">
+    <div class="kicker">Notice</div>
+    <h2>표기 · 상담 시 유의사항</h2>
+
+    <div class="note-card">
+      <h4>화장품 표시·광고 기준</h4>
+      <p>본 자료의 모든 표현은 <b>각질층 수준의 화장품 효능 범위</b>로 작성되었습니다. 상담과 홍보에서도 재생 · 치료 · 치유 · 항염 같은 의약품적 표현 대신 <b>진정 · 피부 컨디션 정돈 · 열감 완화에 도움</b> 등의 표현을 사용해 주십시오. '장벽 강화'는 <b>장벽 케어</b>로, '침투 극대화'는 <b>각질층 수준의 고른 전달</b>로 바꿔 말씀하시면 됩니다.</p>
+    </div>
+
+    <div class="note-card">
+      <h4>세포외소포(EV) 표기</h4>
+      <p>닥터배가 사용하는 원료는 <b>식물 유래 세포외소포(EV)</b>입니다. 인체 유래 엑소좀과는 원료 카테고리 자체가 다르며, '식물 엑소좀' 표현은 2025년 1월부터 허용되었습니다. 인체 유래 엑소좀 규제 이슈와 혼동되지 않도록 <b>'식물 유래'를 반드시 함께</b> 언급해 주십시오.</p>
+    </div>
+
+    <div class="note-card">
+      <h4>마이크로젝션의 분류</h4>
+      <p>마이크로젝션은 제품이 아니라 <b>비침습 경피 전달 미용기기(공산품)</b>입니다. MICRO + <b>PROJECTION</b>(투사 · 돌출)으로, 주사(injection) · 니들링 · MTS가 아닙니다. 아크릴/플라스틱 flat-tip이 각질층을 관통하지 않고 각질 틈을 일시적으로 벌려 모세관력으로 유효성분을 유도합니다. 스탬프는 <b>반드시 1회용</b>이며 세척·재사용은 금지입니다.</p>
+    </div>
+
+    <div class="note-card">
+      <h4>바이알 운용 원칙</h4>
+      <p>바이알 제품(블루 · 핑크 · 블랙 · 토코포르테 · 리퀴드 마스크 · 칼리파우더)은 모두 <b>단회용 밀봉</b>입니다. 개봉 당일 소진을 원칙으로 하며, 모든 관리 프로그램은 <b>바이알 1병 기준</b>으로 설계되어 있습니다.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>㈜배랩</b> &nbsp;·&nbsp; 숭실대학교 의공학 연구실 (배원규 교수)<br>
+    본 자료는 협약 샵 원장님과 전문가를 위한 제품 교육 자료입니다.<br>
+    <a class="flink" href="https://baelab-create.github.io/drbae-guide/">닥터배 소개 및 입점 가이드 →</a>
+    <a class="flink" href="https://baelab-create.github.io/Dr.BAE_review/">원장님 리뷰 모음 →</a>
+  </div>
+</footer>
+
+<script>
+  // 아코디언: 같은 섹션 안에서는 하나만 열리도록
+  document.querySelectorAll('.acc').forEach(function(group){
+    group.querySelectorAll(':scope > details.item').forEach(function(d){
+      d.addEventListener('toggle', function(){
+        if(!d.open) return;
+        group.querySelectorAll(':scope > details.item').forEach(function(o){
+          if(o !== d) o.open = false;
+        });
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
