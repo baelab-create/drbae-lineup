@@ -222,8 +222,8 @@
 
   details.inci{margin-top:14px; border:1px solid var(--line); border-radius:10px; background:#fbfcfe;}
   details.inci summary{padding:11px 14px; font-size:.82rem; font-weight:600; color:var(--sub);}
-  details.inci summary::after{content:"펼치기"; margin-left:auto; font-size:.72rem; color:var(--blue); font-weight:700;}
-  details.inci[open] summary::after{content:"접기"; color:#9aa7b5;}
+  details.inci summary::after{content:"클릭"; margin-left:auto; font-size:.72rem; color:var(--blue); font-weight:700;}
+  details.inci[open] summary::after{content:"닫기"; color:#9aa7b5;}
   .inci-body{padding:0 14px 13px; font-size:.79rem; color:var(--sub); line-height:1.85; word-break:break-all;}
   .inci-note{margin-top:8px; font-size:.73rem; color:#8aa0b8;}
 
@@ -321,8 +321,92 @@ img,video{max-width:100%;}
   .combo .cb-eye,.axis .ax-n,.opener .caret{font-size:11px !important;}
 }
 </style>
+<style id="drbae-ds">
+/* ===== DR.BAE 디자인 시스템 v1 — 전 페이지 공통 (자동 삽입) ===== */
+:root{
+  /* 제품 컬러칩 — 전 자료 공통 정본 */
+  --dbp-blue:#2F6FB2;      /* 엑소토카인 블루 */
+  --dbp-pink:#D97B96;      /* 피디로엔 핑크 */
+  --dbp-black:#2B3038;     /* 엑소토카인 블랙 포 스칼프 */
+  --dbp-brown:#8A6547;     /* 토코포르테 브라운 */
+  --dbp-liquid:#22377A;    /* 엑소토카인 리퀴드 마스크 */
+  --dbp-shampoo:#4A9C5D;   /* 엑소토카인 샴푸 */
+  --dbp-scalp:#2F8F8A;     /* 스칼프 부스터 */
+  --dbp-mjx:#E01B1B;       /* 마이크로젝션 */
+  /* 칼리파우더 = 백색 파우더(점선) · 에센스겔 = 투명 겔(실선) */
+}
+
+/* ---------- 제품 컬러칩 ---------- */
+.dbp{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;line-height:1.2;font-weight:600;color:#2B3038;
+  background:#fff;border:1px solid #DDE3EA;border-radius:999px;
+  padding:5px 11px 5px 8px;white-space:nowrap;vertical-align:middle;
+}
+.dbp i{width:10px;height:10px;border-radius:50%;flex:0 0 auto;display:block;}
+.dbp-blue    i{background:var(--dbp-blue);}
+.dbp-pink    i{background:var(--dbp-pink);}
+.dbp-black   i{background:var(--dbp-black);}
+.dbp-brown   i{background:var(--dbp-brown);}
+.dbp-liquid  i{background:var(--dbp-liquid);}
+.dbp-shampoo i{background:var(--dbp-shampoo);}
+.dbp-scalp   i{background:var(--dbp-scalp);}
+.dbp-mjx     i{background:var(--dbp-mjx);}
+.dbp-cali    i{background:#fff;border:1.6px dotted #A9A79C;}
+.dbp-gel     i{background:#fff;border:1.6px solid #BFBDB3;border-radius:3px;}
+
+/* ---------- 비공개 안내 바 (전 페이지 최상단 동일) ---------- */
+.dbn{
+  background:#0E2A47;border-bottom:2px solid #B98A2E;
+  color:#CBDCEE;font-size:12.5px;font-weight:600;line-height:1.5;
+  text-align:center;padding:10px 16px;letter-spacing:.01em;
+  font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,sans-serif;
+}
+.dbn b{color:#EBD3A0;font-weight:700;}
+.dbn span{color:#8FAAC6;font-weight:500;}
+@media(max-width:480px){ .dbn{font-size:11.5px;padding:9px 12px;} }
+
+/* ---------- 아코디언 공통 규격 ---------- */
+.dbc-click{
+  margin-left:auto;flex:0 0 auto;
+  font-size:11.5px;font-weight:700;letter-spacing:.02em;
+  color:#2F6FB2;background:#EAF2FA;border:1px solid #CFE0F0;
+  border-radius:999px;padding:5px 12px;white-space:nowrap;
+  transition:background .15s,color .15s,border-color .15s;
+}
+.dbc-click::before{content:"클릭";}
+details[open] > summary .dbc-click,
+[class*="acc"].open .dbc-click,
+.open > .dbc-click{
+  color:#6B7684;background:#F0F2F5;border-color:#DDE3EA;
+}
+details[open] > summary .dbc-click::before,
+[class*="acc"].open .dbc-click::before,
+.open > .dbc-click::before{content:"닫기";}
+
+/* 헤더 크기·리듬 통일 */
+details > summary,
+[class*="acc-head"]{
+  min-height:52px;cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+@media(max-width:480px){
+  .dbc-click{font-size:11px;padding:5px 10px;}
+  details > summary,[class*="acc-head"]{min-height:50px;}
+}
+
+/* 아코디언 표시는 '클릭' 배지 하나로 통일 — 기존 화살표/마커는 숨김 */
+details.inci > summary::after,
+details.inci > summary::before,
+.ingredient-details summary::before,
+.faq summary::before{ content:"" !important; display:none !important; }
+.dbc-click.is-open{ color:#6B7684;background:#F0F2F5;border-color:#DDE3EA; }
+.dbc-click.is-open::before{ content:"닫기"; }
+
+</style>
 </head>
 <body>
+<div class="dbn"><b>비공개 · 전문가 교육자료</b> <span>— 협약 샵 원장님 전용 · 유출 및 공유 금지</span></div>
 
 <header>
   <div class="wrap">
@@ -524,7 +608,7 @@ img,video{max-width:100%;}
       <!-- 03 리퀴드 마스크 -->
       <details class="item">
         <summary>
-          <span class="dot" style="background:#5aa0d8"></span>
+          <span class="dot" style="background:#22377A"></span>
           <span class="p-name">엑소토카인 리퀴드 마스크</span>
           <span class="p-tag">소프트 필링 · No-Rinse</span>
           <span class="opener"><span class="caret">▾</span></span>
@@ -659,7 +743,7 @@ img,video{max-width:100%;}
       <!-- 05 칼리파우더 -->
       <details class="item">
         <summary>
-          <span class="dot" style="background:var(--green)"></span>
+          <span class="dot" style="background:#FFFFFF;border:1.6px dotted #A9A79C"></span>
           <span class="p-name">칼리파우더</span>
           <span class="p-tag">동결건조 · 무방부</span>
           <span class="opener"><span class="caret">▾</span></span>
@@ -732,7 +816,7 @@ img,video{max-width:100%;}
       <!-- 06 에센스겔 -->
       <details class="item">
         <summary>
-          <span class="dot" style="background:var(--gold)"></span>
+          <span class="dot" style="background:#FFFFFF;border:1.6px solid #BFBDB3;border-radius:3px"></span>
           <span class="p-name">에센스겔 500ml / 150ml</span>
           <span class="p-tag">매뉴얼 베이스 · 샵 필수템</span>
           <span class="opener"><span class="caret">▾</span></span>
@@ -898,7 +982,7 @@ img,video{max-width:100%;}
       <!-- 08 샴푸 -->
       <details class="item">
         <summary>
-          <span class="dot" style="background:var(--gray)"></span>
+          <span class="dot" style="background:#4A9C5D"></span>
           <span class="p-name">엑소토카인 샴푸 500ml</span>
           <span class="p-tag">홈케어 · Rinse-off</span>
           <span class="opener"><span class="caret">▾</span></span>
@@ -1186,5 +1270,31 @@ img,video{max-width:100%;}
   });
 </script>
 
+<script>
+/* 아코디언 헤더에 '클릭' 배지를 통일 규격으로 부착 */
+(function(){
+  var SEL = "details > summary";
+  document.querySelectorAll(SEL).forEach(function(h){
+    if(h.querySelector('.dbc-click')) return;
+    if(h.offsetParent===null && !h.closest('details')) return;
+    var b=document.createElement('span'); b.className='dbc-click'; b.setAttribute('aria-hidden','true');
+    /* 기존 화살표/셰브론은 숨겨 '클릭' 배지 하나만 남김 */
+    h.querySelectorAll('.acc-arrow,.acc-chev,.chev,.caret,.arrow').forEach(function(a){a.style.display='none';});
+    h.appendChild(b);
+    if(getComputedStyle(h).display.indexOf('flex')<0){ h.style.display='flex'; h.style.alignItems='center'; }
+  });
+  /* details가 아닌 JS 아코디언(.acc-head)은 open 클래스를 부모에서 읽음 */
+  document.querySelectorAll('.acc-head').forEach(function(h){
+    h.addEventListener('click', function(){
+      setTimeout(function(){
+        var p=h.closest('.acc'); if(!p) return;
+        h.querySelectorAll('.dbc-click').forEach(function(b){
+          b.classList.toggle('is-open', p.classList.contains('open'));
+        });
+      },0);
+    });
+  });
+})();
+</script>
 </body>
 </html>
