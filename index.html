@@ -54,7 +54,7 @@
   body{
     font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Malgun Gothic",sans-serif;
     background:var(--bg); color:var(--ink); line-height:1.65;
-    word-break:keep-all;
+    word-break:keep-all; overflow-wrap:break-word;
   }
   .wrap{max-width:860px;margin:0 auto;padding:0 20px;}
 
@@ -253,6 +253,25 @@
   .note-card h4{font-size:.95rem; font-weight:700; margin-bottom:9px;}
   .note-card p{font-size:.87rem; color:var(--sub); line-height:1.78;}
 
+  /* ---------- crosslink ---------- */
+  .crosslink{
+    display:block; text-decoration:none; margin-top:6px;
+    background:linear-gradient(150deg,#12314f,#0e1c2b); color:#fff;
+    border-radius:16px; padding:28px 24px; position:relative; overflow:hidden;
+    transition:transform .18s, box-shadow .18s;
+  }
+  .crosslink:hover{transform:translateY(-2px); box-shadow:0 10px 28px rgba(14,42,71,.22);}
+  .crosslink::after{content:""; position:absolute; right:-60px; bottom:-70px; width:230px; height:230px;
+    background:radial-gradient(circle,rgba(47,111,178,.42),transparent 70%);}
+  .cl-eye{font-family:var(--mono); font-size:.7rem; letter-spacing:.18em; color:#8fd0ee; text-transform:uppercase; margin-bottom:10px;}
+  .crosslink h3{font-size:1.25rem; font-weight:800; letter-spacing:-.02em; line-height:1.4;}
+  .crosslink p{margin-top:11px; font-size:.89rem; color:#b8cee2; line-height:1.75; position:relative; z-index:1;}
+  .crosslink p b{color:#fff;}
+  .cl-btn{
+    display:inline-block; margin-top:18px; background:#fff; color:var(--navy);
+    border-radius:999px; padding:11px 22px; font-size:.9rem; font-weight:700; position:relative; z-index:1;
+  }
+
   /* ---------- footer ---------- */
   footer{
     margin-top:56px; background:var(--navy); color:#a9c6e3; padding:34px 0 40px; text-align:center; font-size:.83rem; line-height:1.8;
@@ -307,6 +326,7 @@
     <a href="#scalp">두피 3종</a>
     <a href="#compat">혼합 호환성</a>
     <a href="#notice">표기 안내</a>
+    <a href="#recipe">관리 레시피</a>
   </div>
 </nav>
 
@@ -539,7 +559,7 @@
           </div>
           <div class="edge"><b>홈케어 판매 포인트 —</b> 연령대가 있는 여성 고객에게 판매했을 때 <b>속광이 올라오는 만족도</b>가 가장 높게 나오는 품목입니다. 샵 관리 후 홈케어로 이어 붙이기 좋습니다.</div>
 
-          <div class="forbid"><b>절대 금기 ·</b> 소프트 필링 이후 <b>같은 세션에 마이크로젝션을 병행하지 마십시오</b>(자극 중첩). 두 가지를 모두 운용하실 경우 반드시 방문 회차를 나누어 교차 배치합니다.</div>
+          <div class="forbid"><b>절대 금기 ·</b> 소프트 필링 이후 <b>같은 세션에 마이크로젝션을 병행하지 마십시오</b>(자극 중첩). 두 가지를 모두 운용하실 경우 방문 회차를 나누어 교차 배치하고, <b>최소 7일 이상 간격</b>을 두십시오.</div>
 
           <div class="caution"><b>사용 유의 ·</b> 전성분에 <b>향료</b>가 포함되어 있습니다. 향에 민감한 고객에게는 사전 안내와 패치 테스트를 권장합니다.</div>
 
@@ -607,7 +627,7 @@
             <li>에어건 운용은 고객 입장에서 <b>마일드하고 고급스러운 감성</b>으로 받아들여집니다. 얼굴과 두피 모두 활용 가능합니다.</li>
           </ul>
 
-          <div class="caution"><b>사용 유의 ·</b> ① 물에 가까운 액상이라 <b>마이크로젝션 스탬프에 결합할 수 없습니다</b>(에어건 · 손 도포 전용). ② <b>항상 프로그램의 마지막</b> 쿨링 단계에 배치합니다. ③ <b>메나다이온(비타민 K)</b>이 포함되어 있어 임신 · 수유 중 고객에게는 적용을 보류하십시오. ④ 단회용 바이알, 개봉 당일 소진.</div>
+          <div class="caution"><b>사용 유의 ·</b> ① 물에 가까운 액상이라 <b>마이크로젝션 스탬프에 결합할 수 없습니다</b>(에어건 · 손 도포 전용). ② <b>에어건 쿨링 단계는 항상 프로그램의 마지막</b>에 배치합니다. (붓 도포 · 이온토포레시스로 앞 단계 베이스에 쓰는 변형은 가능) ③ <b>메나다이온(비타민 K)</b>이 포함되어 있어 임신 · 수유 중 고객에게는 적용을 보류하십시오. ④ 단회용 바이알, 개봉 당일 소진.</div>
 
           <details class="inci">
             <summary>전성분 INCI · 37종</summary>
@@ -985,7 +1005,7 @@
         <tr><th>제품</th><th>점증 · 제형 기반</th><th>칼리파우더 용해</th><th>마이크로젝션 스탬핑</th></tr>
         <tr><td><b>엑소토카인 블루</b></td><td>잔탄검 기반</td><td class="ok">✓ 가능</td><td class="ok">✓ 가능</td></tr>
         <tr><td><b>피디로엔 핑크</b></td><td>암모늄아크릴로일다이메틸타우레이트/VP코폴리머 (설포네이트계 · Ca²⁺ 안정)</td><td class="ok">✓ 가능</td><td class="ok">✓ 가능</td></tr>
-        <tr><td><b>리퀴드 마스크</b></td><td>저점도 · 계면활성제 무첨가</td><td class="ok">✓ 가능</td><td class="no">✗ 동일 세션 금기</td></tr>
+        <tr><td><b>리퀴드 마스크</b></td><td>저점도 · 계면활성제 무첨가</td><td class="ok">✓ 가능</td><td class="no">✗ 동일 세션 금기 (7일 이상 분리)</td></tr>
         <tr><td><b>토코포르테 브라운</b></td><td>액상 · 저점도</td><td class="ok">✓ 가능</td><td class="no">✗ 흘러내림 (에어건 전용)</td></tr>
         <tr><td><b>블랙 포 스칼프</b></td><td>잔탄검 기반 · 두피 전용</td><td class="ok">✓ 가능</td><td class="ok">✓ 가능 (두피)</td></tr>
         <tr><td><b>에센스겔</b></td><td>카보머 계열 (카복실기)</td><td class="no">✗ 직접 혼합 금지</td><td>— 베이스 용도</td></tr>
@@ -994,7 +1014,7 @@
 
     <div class="forbid" style="margin-top:14px;"><b>왜 에센스겔만 안 되는가 —</b> 카보머 계열 점증제는 카복실기(음전하)로 그물망을 만듭니다. Ca²⁺는 전하가 2개라 서로 다른 사슬 두 개를 <b>동시에 붙잡아 가교 · 수축</b>시키고, 그 결과 그물망이 무너져 점도가 사라집니다. 꾸덕한 겔이 물처럼 변하는 현상이 이것입니다. → 혼합하지 마시고 <b>별도 단계로 레이어링</b>하십시오.</div>
 
-    <div class="caution"><b>세션 설계 규칙 ·</b> ① 소프트 필링(리퀴드 마스크) 프로그램은 초음파 · 갈바닉만 사용하며, <b>같은 세션에 마이크로젝션을 넣지 않습니다.</b> ② 토코포르테 에어건은 <b>항상 프로그램의 마지막</b> 쿨링 단계입니다. ③ 블루 → 핑크 <b>순차 이중 스탬프는 하지 않습니다.</b> ④ 페이스에는 <b>멘톨 함유 제품(블랙 · 스칼프 부스터 · 샴푸)을 사용하지 않습니다.</b></div>
+    <div class="caution"><b>세션 설계 규칙 ·</b> ① 소프트 필링(리퀴드 마스크) 프로그램은 초음파 · 갈바닉만 사용하며, <b>같은 세션에 마이크로젝션을 넣지 않습니다.</b> ② 토코포르테 <b>에어건 쿨링은 항상 프로그램의 마지막</b> 단계입니다. (붓 · 이온토포레시스로 앞 단계 베이스에 쓰는 변형은 별개) ③ 블루 → 핑크 <b>순차 이중 스탬프는 하지 않습니다.</b> ④ 페이스에는 <b>멘톨 함유 제품(블랙 · 스칼프 부스터 · 샴푸)을 사용하지 않습니다.</b></div>
   </div>
 </section>
 
@@ -1026,12 +1046,24 @@
   </div>
 </section>
 
+<!-- ===================== 레시피 페이지 연결 ===================== -->
+<section id="recipe">
+  <div class="wrap">
+    <a class="crosslink" href="https://baelab-create.github.io/Dr.BAE_review/">
+      <div class="cl-eye">Recipe Archive</div>
+      <h3>닥터배 원장님들 관리 레시피 공유</h3>
+      <p>실제로 운영 중인 원장님들의 후기를 <b>대표 관리 20종</b>으로 정리한 페이지입니다. 이 자료의 제품 9종이 현장에서 어떤 순서와 조합으로 쓰이는지, 가격대는 어떻게 잡는지 확인하실 수 있습니다.</p>
+      <span class="cl-btn">관리 레시피 보러 가기 →</span>
+    </a>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <b>㈜배랩</b> &nbsp;·&nbsp; 숭실대학교 의공학 연구실 (배원규 교수)<br>
     본 자료는 협약 샵 원장님과 전문가를 위한 제품 교육 자료입니다.<br>
     <a class="flink" href="https://baelab-create.github.io/drbae-guide/">닥터배 소개 및 입점 가이드 →</a>
-    <a class="flink" href="https://baelab-create.github.io/Dr.BAE_review/">원장님 리뷰 모음 →</a>
+    <a class="flink" href="https://baelab-create.github.io/Dr.BAE_review/">원장님들 관리 레시피 →</a>
   </div>
 </footer>
 
